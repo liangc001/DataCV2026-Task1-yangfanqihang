@@ -1,0 +1,9 @@
+.openai_api_key
+__pycache__/
+*.pyc
+runs/*
+!runs/mainline/
+!runs/mainline/output/
+!runs/mainline/output/model.json
+!runs/mainline/output/prediction.txt
+!runs/mainline/output/result.zip

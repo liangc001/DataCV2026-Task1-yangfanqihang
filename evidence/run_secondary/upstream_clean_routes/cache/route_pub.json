@@ -1,0 +1,70 @@
+{
+  "model": "hybrid-v8-public-compliant-llm-only",
+  "parameters": {
+    "profiles": {
+      "A": {
+        "judge_model": "gpt-5.2",
+        "challenge_enable": true
+      },
+      "B": {
+        "judge_model": "gpt-5.1",
+        "challenge_enable": true
+      },
+      "C": {
+        "judge_model": "gpt-5.2",
+        "challenge_enable": false
+      },
+      "D": {
+        "judge_model": "gpt-5.1",
+        "challenge_enable": false
+      }
+    },
+    "combiner": "question-template selection over A/B/C/D/MAJ3 with small vote-pattern overrides; no explicit pixel measurement rules",
+    "question_policy": {
+      "Are the two vertical bands of the same color?": "D",
+      "Are the red and black solid diagonal lines aligned?": "B",
+      "Do the squares on the left and right have straight edges?": "A",
+      "Are the two vertical lines straight?": "B",
+      "Are the two rectangle the same color?": "A",
+      "Are the two orange circles the same size?": "B",
+      "Are the those red lines straight?": "A",
+      "Are the distances between the vertical markers labeled A–B and B–C equal?": "B",
+      "Are the two black lines of equal length?": "C",
+      "Are the two small squares of the same color?": "MAJ3",
+      "Are the two horizontal black lines of equal length?": "MAJ3",
+      "Are those vertical columns parallel?": "C",
+      "Are the two circles the same size?": "C",
+      "Are the two circles of the same color?": "C",
+      "Is there an boundary in between every adjecent regions?": "A",
+      "Are the two solid circles the same size?": "B",
+      "Are the left white pentagon and the right black pentagon equal in size?": "A",
+      "Are the left white square and the right black square equal in size?": "C"
+    },
+    "pattern_overrides": {
+      "Are the left white square and the right black square equal in size? | (1, 1, 0, 1)": "A",
+      "Are the distances between the vertical markers labeled A–B and B–C equal? | (0, 0, 1, 1)": "C"
+    },
+    "choice_usage": {
+      "D": 30,
+      "B": 149,
+      "A": 182,
+      "C": 179,
+      "MAJ3": 90
+    },
+    "override_usage": {
+      "Are the distances between the vertical markers labeled A–B and B–C equal? | (0, 0, 1, 1) -> C": 1,
+      "Are the left white square and the right black square equal in size? | (1, 1, 0, 1) -> A": 2
+    },
+    "route_counts": {
+      "cached_A": 630,
+      "cached_B": 630,
+      "cached_C": 630,
+      "cached_D": 630,
+      "fresh_A": 0,
+      "fresh_B": 0,
+      "fresh_C": 0,
+      "fresh_D": 0
+    },
+    "pipeline": "prediction-only cached route combination"
+  }
+}

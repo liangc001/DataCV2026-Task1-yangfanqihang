@@ -1,0 +1,7 @@
+run_root=recorded_run/run_primary
+start_time=2026-04-10 22:30:21 CST
+base_url=<api_base_url>
+input_csv=task1_data/test.csv
+policy_mode=semantic_heuristic
+python_bin=python3
+package_root=package_root

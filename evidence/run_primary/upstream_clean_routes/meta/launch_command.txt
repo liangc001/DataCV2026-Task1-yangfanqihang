@@ -1,0 +1,11 @@
+cd package_root
+TASK1_ROOT=task1_data \
+INPUT_CSV=task1_data/test.csv \
+VQA_BASE_URL=<api_base_url> \
+PYTHON_BIN=python3 \
+TREE_WORK_DIR=<run_root>/work \
+TREE_CACHE_DIR=<run_root>/cache \
+TREE_OUTPUT_DIR=<run_root>/output \
+TREE_LOG_DIR=<run_root>/logs \
+TREE_POLICY_MODE=semantic_heuristic \
+bash run_all.sh

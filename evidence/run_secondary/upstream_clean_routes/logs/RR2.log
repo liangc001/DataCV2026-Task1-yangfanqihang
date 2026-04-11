@@ -1,0 +1,5 @@
+Results saved to recorded_run/run_secondary/clean_routes/cache/route_rr2.txt
+Model info saved to recorded_run/run_secondary/clean_routes/cache/route_rr2.json
+Total: 630 | Answer 0: 291 | Answer 1: 339 | Failed: 0
+Action usage: {'PUB': 449, 'MAJ_BCL': 30, 'L': 30, 'W': 90, 'MAJ_CLW': 30, 'C': 1}
+Override usage: {'Are the two rectangle the same color? | (1, 1, 1, 0, 1, 1, 1) -> C': 1}

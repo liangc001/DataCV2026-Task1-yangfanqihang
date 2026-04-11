@@ -1,0 +1,6 @@
+kind=v9_full
+start_time=2026-04-11 09:31:05 CST
+base_url=<api_base_url>
+input_csv=task1_data/test.csv
+python_bin=python3
+package_root=package_root

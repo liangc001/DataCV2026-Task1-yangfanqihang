@@ -1,0 +1,13 @@
+{
+  "model": "gpt-5.2",
+  "parameters": {
+    "base_url": "<api_base_url>",
+    "judge_model": "gpt-5.2",
+    "fallback_model": "gpt-5.1",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": 42,
+    "pipeline": "v8 intent-specific assist + fixed qualitative length montage + selective challenger on high-risk intents",
+    "no_minus_one": true
+  }
+}

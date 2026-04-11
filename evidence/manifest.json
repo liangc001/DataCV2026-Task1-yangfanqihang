@@ -1,0 +1,18 @@
+{
+  "records": [
+    {
+      "record_id": "secondary_run",
+      "summary": "template router replay",
+      "evidence_dir": "evidence/run_secondary"
+    },
+    {
+      "record_id": "primary_run",
+      "summary": "template router replay with frozen upstream inputs",
+      "inputs": [
+        "assets/frozen_inputs/mainline/clean_routes",
+        "assets/frozen_inputs/mainline/v9_full/output/prediction.txt"
+      ],
+      "evidence_dir": "evidence/run_primary"
+    }
+  ]
+}

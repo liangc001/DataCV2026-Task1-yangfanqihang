@@ -1,0 +1,66 @@
+{
+  "model": "hybrid-v8-public-randomroute-v2",
+  "parameters": {
+    "profile_paths": {
+      "PUB": "recorded_run/run_primary/cache/route_pub.txt",
+      "A": "recorded_run/run_primary/cache/route_a.txt",
+      "B": "recorded_run/run_primary/cache/route_b.txt",
+      "C": "recorded_run/run_primary/cache/route_c.txt",
+      "D": "recorded_run/run_primary/cache/route_d.txt",
+      "L": "recorded_run/run_primary/cache/route_l.txt",
+      "W": "recorded_run/run_primary/cache/route_w.txt"
+    },
+    "question_policy": {
+      "Are the distances between the vertical markers labeled A–B and B–C equal?": "PUB",
+      "Are the left white pentagon and the right black pentagon equal in size?": "MAJ_CLW",
+      "Are the left white square and the right black square equal in size?": "PUB",
+      "Are the red and black solid diagonal lines aligned?": "PUB",
+      "Are the those red lines straight?": "PUB",
+      "Are the two black lines of equal length?": "MAJ_BCL",
+      "Are the two circles of the same color?": "PUB",
+      "Are the two circles the same size?": "W",
+      "Are the two horizontal black lines of equal length?": "W",
+      "Are the two orange circles the same size?": "L",
+      "Are the two rectangle the same color?": "PUB",
+      "Are the two small squares of the same color?": "PUB",
+      "Are the two solid circles the same size?": "PUB",
+      "Are the two vertical bands of the same color?": "PUB",
+      "Are the two vertical lines straight?": "PUB",
+      "Are those vertical columns parallel?": "PUB",
+      "Do the squares on the left and right have straight edges?": "PUB",
+      "Is there an boundary in between every adjecent regions?": "PUB"
+    },
+    "signature_keys": [
+      "PUB",
+      "A",
+      "B",
+      "C",
+      "D",
+      "L",
+      "W"
+    ],
+    "pattern_overrides": {
+      "Are the left white pentagon and the right black pentagon equal in size? | (1, 1, 1, 0, 1, 0, 1)": "PUB",
+      "Are the two horizontal black lines of equal length? | (0, 0, 1, 0, 1, 1, 0)": "B",
+      "Are the two circles the same size? | (0, 1, 1, 0, 1, 1, 1)": "W",
+      "Are the two rectangle the same color? | (1, 1, 1, 0, 1, 1, 1)": "C",
+      "Are the two rectangle the same color? | (1, 1, 1, 1, 1, 1, 0)": "W"
+    },
+    "action_usage": {
+      "PUB": 452,
+      "MAJ_BCL": 30,
+      "L": 30,
+      "W": 89,
+      "MAJ_CLW": 28,
+      "B": 1
+    },
+    "override_usage": {
+      "Are the two circles the same size? | (0, 1, 1, 0, 1, 1, 1) -> W": 1,
+      "Are the left white pentagon and the right black pentagon equal in size? | (1, 1, 1, 0, 1, 0, 1) -> PUB": 2,
+      "Are the two horizontal black lines of equal length? | (0, 0, 1, 0, 1, 1, 0) -> B": 1
+    },
+    "route_seed": 20260306,
+    "pipeline": "prediction-only route/combination over cached model outputs",
+    "no_minus_one": true
+  }
+}

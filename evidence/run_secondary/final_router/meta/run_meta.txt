@@ -1,0 +1,5 @@
+kind=template_router_v2_snapshot
+start_time=2026-04-11 12:44:09 CST
+policy_json=policies/template_router_policy_v2.json
+input_csv=task1_data/test.csv
+evidence_root=evidence/run_secondary

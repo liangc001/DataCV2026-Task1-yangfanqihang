@@ -1,0 +1,5 @@
+run_root=recorded_run/upstream_v9
+start_time=2026-04-10 22:57:51 CST
+base_url=<api_base_url>
+input_csv=recorded_run/upstream_v9/work/test_abs.csv
+model=gpt-5.2

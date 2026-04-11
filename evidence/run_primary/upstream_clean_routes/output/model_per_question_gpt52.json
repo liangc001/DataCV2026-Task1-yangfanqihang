@@ -1,0 +1,338 @@
+{
+  "model": "template-tree-v1-public",
+  "parameters": {
+    "profile_paths": {
+      "A": "evidence/run_primary/upstream_clean_routes/cache/route_a.txt",
+      "B": "evidence/run_primary/upstream_clean_routes/cache/route_b.txt",
+      "C": "evidence/run_primary/upstream_clean_routes/cache/route_c.txt",
+      "D": "evidence/run_primary/upstream_clean_routes/cache/route_d.txt",
+      "L": "evidence/run_primary/upstream_clean_routes/cache/route_l.txt",
+      "W": "evidence/run_primary/upstream_clean_routes/cache/route_w.txt",
+      "PUB": "evidence/run_primary/upstream_clean_routes/cache/route_pub.txt",
+      "RR2": "evidence/run_primary/upstream_clean_routes/cache/route_rr2.txt"
+    },
+    "vote_keys": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "L",
+      "W",
+      "PUB",
+      "RR2"
+    ],
+    "policy_mode": "per_question_gpt52",
+    "tree_policy": {
+      "Are the distances between the vertical markers labeled A–B and B–C equal?": {
+        "type": "split",
+        "feature": "A",
+        "when0": {
+          "type": "split",
+          "feature": "B",
+          "when0": {
+            "type": "leaf",
+            "action": "D"
+          },
+          "when1": {
+            "type": "leaf",
+            "action": "W"
+          }
+        },
+        "when1": {
+          "type": "split",
+          "feature": "B",
+          "when0": {
+            "type": "leaf",
+            "action": "D"
+          },
+          "when1": {
+            "type": "leaf",
+            "action": "C"
+          }
+        }
+      },
+      "Are the left white pentagon and the right black pentagon equal in size?": {
+        "type": "split",
+        "feature": "A",
+        "when0": {
+          "type": "leaf",
+          "action": "C"
+        },
+        "when1": {
+          "type": "split",
+          "feature": "L",
+          "when0": {
+            "type": "leaf",
+            "action": "A"
+          },
+          "when1": {
+            "type": "leaf",
+            "action": "C"
+          }
+        }
+      },
+      "Are the left white square and the right black square equal in size?": {
+        "type": "split",
+        "feature": "A",
+        "when0": {
+          "type": "split",
+          "feature": "L",
+          "when0": {
+            "type": "leaf",
+            "action": "W"
+          },
+          "when1": {
+            "type": "leaf",
+            "action": "B"
+          }
+        },
+        "when1": {
+          "type": "leaf",
+          "action": "W"
+        }
+      },
+      "Are the red and black solid diagonal lines aligned?": {
+        "type": "leaf",
+        "action": "B"
+      },
+      "Are the those red lines straight?": {
+        "type": "leaf",
+        "action": "B"
+      },
+      "Are the two black lines of equal length?": {
+        "type": "split",
+        "feature": "A",
+        "when0": {
+          "type": "leaf",
+          "action": "W"
+        },
+        "when1": {
+          "type": "split",
+          "feature": "W",
+          "when0": {
+            "type": "leaf",
+            "action": "RR2"
+          },
+          "when1": {
+            "type": "leaf",
+            "action": "MAJ"
+          }
+        }
+      },
+      "Are the two circles of the same color?": {
+        "type": "split",
+        "feature": "A",
+        "when0": {
+          "type": "split",
+          "feature": "L",
+          "when0": {
+            "type": "leaf",
+            "action": "W"
+          },
+          "when1": {
+            "type": "leaf",
+            "action": "A"
+          }
+        },
+        "when1": {
+          "type": "leaf",
+          "action": "A"
+        }
+      },
+      "Are the two circles the same size?": {
+        "type": "split",
+        "feature": "A",
+        "when0": {
+          "type": "leaf",
+          "action": "W"
+        },
+        "when1": {
+          "type": "leaf",
+          "action": "C"
+        }
+      },
+      "Are the two horizontal black lines of equal length?": {
+        "type": "split",
+        "feature": "A",
+        "when0": {
+          "type": "split",
+          "feature": "C",
+          "when0": {
+            "type": "leaf",
+            "action": "W"
+          },
+          "when1": {
+            "type": "leaf",
+            "action": "MAJ"
+          }
+        },
+        "when1": {
+          "type": "split",
+          "feature": "L",
+          "when0": {
+            "type": "leaf",
+            "action": "A"
+          },
+          "when1": {
+            "type": "leaf",
+            "action": "W"
+          }
+        }
+      },
+      "Are the two orange circles the same size?": {
+        "type": "split",
+        "feature": "A",
+        "when0": {
+          "type": "split",
+          "feature": "L",
+          "when0": {
+            "type": "leaf",
+            "action": "W"
+          },
+          "when1": {
+            "type": "leaf",
+            "action": "B"
+          }
+        },
+        "when1": {
+          "type": "split",
+          "feature": "W",
+          "when0": {
+            "type": "leaf",
+            "action": "D"
+          },
+          "when1": {
+            "type": "leaf",
+            "action": "C"
+          }
+        }
+      },
+      "Are the two rectangle the same color?": {
+        "type": "split",
+        "feature": "A",
+        "when0": {
+          "type": "leaf",
+          "action": "L"
+        },
+        "when1": {
+          "type": "split",
+          "feature": "C",
+          "when0": {
+            "type": "leaf",
+            "action": "W"
+          },
+          "when1": {
+            "type": "leaf",
+            "action": "L"
+          }
+        }
+      },
+      "Are the two small squares of the same color?": {
+        "type": "leaf",
+        "action": "W"
+      },
+      "Are the two solid circles the same size?": {
+        "type": "leaf",
+        "action": "B"
+      },
+      "Are the two vertical bands of the same color?": {
+        "type": "split",
+        "feature": "B",
+        "when0": {
+          "type": "leaf",
+          "action": "D"
+        },
+        "when1": {
+          "type": "split",
+          "feature": "L",
+          "when0": {
+            "type": "leaf",
+            "action": "B"
+          },
+          "when1": {
+            "type": "leaf",
+            "action": "A"
+          }
+        }
+      },
+      "Are the two vertical lines straight?": {
+        "type": "leaf",
+        "action": "B"
+      },
+      "Are those vertical columns parallel?": {
+        "type": "split",
+        "feature": "A",
+        "when0": {
+          "type": "split",
+          "feature": "B",
+          "when0": {
+            "type": "leaf",
+            "action": "A"
+          },
+          "when1": {
+            "type": "leaf",
+            "action": "W"
+          }
+        },
+        "when1": {
+          "type": "leaf",
+          "action": "B"
+        }
+      },
+      "Do the squares on the left and right have straight edges?": {
+        "type": "leaf",
+        "action": "A"
+      },
+      "Is there an boundary in between every adjecent regions?": {
+        "type": "split",
+        "feature": "B",
+        "when0": {
+          "type": "split",
+          "feature": "D",
+          "when0": {
+            "type": "leaf",
+            "action": "MAJ"
+          },
+          "when1": {
+            "type": "leaf",
+            "action": "B"
+          }
+        },
+        "when1": {
+          "type": "leaf",
+          "action": "A"
+        }
+      }
+    },
+    "gpt52_per_question_policy": {
+      "Are the distances between the vertical markers labeled A–B and B–C equal?": "A",
+      "Are the left white pentagon and the right black pentagon equal in size?": "A",
+      "Are the left white square and the right black square equal in size?": "W",
+      "Are the red and black solid diagonal lines aligned?": "C",
+      "Are the those red lines straight?": "A",
+      "Are the two black lines of equal length?": "W",
+      "Are the two circles of the same color?": "W",
+      "Are the two circles the same size?": "A",
+      "Are the two horizontal black lines of equal length?": "W",
+      "Are the two orange circles the same size?": "C",
+      "Are the two rectangle the same color?": "C",
+      "Are the two small squares of the same color?": "W",
+      "Are the two solid circles the same size?": "L",
+      "Are the two vertical bands of the same color?": "L",
+      "Are the two vertical lines straight?": "A",
+      "Are those vertical columns parallel?": "L",
+      "Do the squares on the left and right have straight edges?": "A",
+      "Is there an boundary in between every adjecent regions?": "B"
+    },
+    "semantic_heuristic": "template-aware routing",
+    "action_usage": {
+      "L": 120,
+      "C": 90,
+      "A": 210,
+      "W": 180,
+      "B": 30
+    },
+    "pipeline": "template decision tree over cached profile outputs",
+    "no_minus_one": true
+  }
+}

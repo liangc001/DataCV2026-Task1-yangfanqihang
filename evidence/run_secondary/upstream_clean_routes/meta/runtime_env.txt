@@ -1,0 +1,11 @@
+python_unbuffered=1
+pythonhashseed=0
+vqa_temperature=0.0
+vqa_top_p=1.0
+vqa_seed=42
+vqa_request_timeout=60
+vqa_base_url=<api_base_url>
+tree_policy_mode=semantic_heuristic
+input_csv=task1_data/test.csv
+abs_csv=recorded_run/run_secondary/clean_routes/work/test_abs.csv
+package_root=package_root

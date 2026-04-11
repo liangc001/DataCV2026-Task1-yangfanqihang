@@ -1,0 +1,4 @@
+kind=template_router_v2_snapshot
+timestamp=2026-04-11 09:11:56 CST
+policy_json=policies/template_router_policy_v2.json
+evidence_root=evidence/run_primary

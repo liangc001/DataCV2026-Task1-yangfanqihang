@@ -1,0 +1,4 @@
+Results saved to evidence/run_secondary/final_router/output/prediction.txt
+Model info saved to evidence/run_secondary/final_router/output/model.json
+Total: 630 | Answer 0: 332 | Answer 1: 298 | Failed: 0
+Action usage: {'V9': 120, 'B': 120, 'A': 60, 'MAJ3:B+C+TREE': 30, 'L': 90, 'MAJ3:B+L+W': 30, 'W': 90, 'C': 60, 'MAJ3:B+L+V9': 30}

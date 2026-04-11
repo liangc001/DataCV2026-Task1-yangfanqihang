@@ -1,0 +1,38 @@
+BASE_URL=<api_base_url>
+YES_MODEL=qwen3-vl-plus
+NO_MODEL=qwen3-vl-plus
+JUDGE_MODEL=gpt-5.1
+FALLBACK_MODEL=gpt-5
+USE_ASSIST_VIEW=True USE_FLIP_VIEW=True ASSIST_MAX_W=768
+LENGTH_USE_ICL=False LENGTH_ICL_PRESET=4 ICL_EXAMPLES=0
+REQUEST_TIMEOUT=60.0
+BASE_URL=<api_base_url>
+YES_MODEL=qwen3-vl-plus
+NO_MODEL=qwen3-vl-plus
+JUDGE_MODEL=gpt-5.1
+FALLBACK_MODEL=gpt-5
+USE_ASSIST_VIEW=True USE_FLIP_VIEW=True ASSIST_MAX_W=768
+LENGTH_USE_ICL=False LENGTH_ICL_PRESET=4 ICL_EXAMPLES=0
+REQUEST_TIMEOUT=60.0
+BASE_URL=<api_base_url>
+YES_MODEL=qwen3-vl-plus
+NO_MODEL=qwen3-vl-plus
+JUDGE_MODEL=gpt-5.1
+FALLBACK_MODEL=gpt-5
+USE_ASSIST_VIEW=True USE_FLIP_VIEW=True ASSIST_MAX_W=768
+LENGTH_USE_ICL=False LENGTH_ICL_PRESET=4 ICL_EXAMPLES=0
+REQUEST_TIMEOUT=60.0
+BASE_URL=<api_base_url>
+YES_MODEL=qwen3-vl-plus
+NO_MODEL=qwen3-vl-plus
+JUDGE_MODEL=gpt-5.1
+FALLBACK_MODEL=gpt-5
+USE_ASSIST_VIEW=True USE_FLIP_VIEW=True ASSIST_MAX_W=768
+LENGTH_USE_ICL=False LENGTH_ICL_PRESET=4 ICL_EXAMPLES=0
+REQUEST_TIMEOUT=60.0
+Results saved to recorded_run/run_secondary/clean_routes/cache/route_pub.txt
+Model info saved to recorded_run/run_secondary/clean_routes/cache/route_pub.json
+Total: 630 | Answer 0: 248 | Answer 1: 382 | Failed: 0
+Route usage: {'cached_A': 630, 'cached_B': 630, 'cached_C': 630, 'cached_D': 630, 'fresh_A': 0, 'fresh_B': 0, 'fresh_C': 0, 'fresh_D': 0}
+Choice usage: {'D': 30, 'B': 149, 'A': 182, 'C': 179, 'MAJ3': 90}
+Override usage: {'Are the distances between the vertical markers labeled A–B and B–C equal? | (0, 0, 1, 1) -> C': 1, 'Are the left white square and the right black square equal in size? | (1, 1, 0, 1) -> A': 2}

@@ -1,0 +1,23 @@
+{
+  "kind": "template_router_policy_v2",
+  "prompt_policy": {
+    "Are the two vertical bands of the same color?": "V9",
+    "Are the red and black solid diagonal lines aligned?": "B",
+    "Do the squares on the left and right have straight edges?": "A",
+    "Are the two vertical lines straight?": "B",
+    "Are the two rectangle the same color?": "V9",
+    "Are the two orange circles the same size?": "L",
+    "Are the those red lines straight?": "B",
+    "Are the distances between the vertical markers labeled A–B and B–C equal?": "V9",
+    "Are the two black lines of equal length?": "MAJ3:B+C+TREE",
+    "Are the two small squares of the same color?": "A",
+    "Are the two horizontal black lines of equal length?": "L",
+    "Are those vertical columns parallel?": "W",
+    "Are the two circles the same size?": "C",
+    "Are the two circles of the same color?": "C",
+    "Is there an boundary in between every adjecent regions?": "V9",
+    "Are the two solid circles the same size?": "MAJ3:B+L+W",
+    "Are the left white pentagon and the right black pentagon equal in size?": "MAJ3:B+L+V9",
+    "Are the left white square and the right black square equal in size?": "W"
+  }
+}

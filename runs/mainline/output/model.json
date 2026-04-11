@@ -1,0 +1,152 @@
+{
+  "model": "template-router-v2",
+  "parameters": {
+    "profile_paths": {
+      "A": "assets/frozen_inputs/mainline/clean_routes/cache/route_a.txt",
+      "B": "assets/frozen_inputs/mainline/clean_routes/cache/route_b.txt",
+      "C": "assets/frozen_inputs/mainline/clean_routes/cache/route_c.txt",
+      "D": "assets/frozen_inputs/mainline/clean_routes/cache/route_d.txt",
+      "L": "assets/frozen_inputs/mainline/clean_routes/cache/route_l.txt",
+      "W": "assets/frozen_inputs/mainline/clean_routes/cache/route_w.txt",
+      "PUB": "assets/frozen_inputs/mainline/clean_routes/cache/route_pub.txt",
+      "RR2": "assets/frozen_inputs/mainline/clean_routes/cache/route_rr2.txt",
+      "TREE": "assets/frozen_inputs/mainline/clean_routes/output/prediction_tree.txt",
+      "V9": "assets/frozen_inputs/mainline/v9_full/output/prediction.txt"
+    },
+    "route_order": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "L",
+      "W",
+      "PUB",
+      "RR2",
+      "TREE",
+      "V9"
+    ],
+    "majority_keys": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "L",
+      "W",
+      "PUB",
+      "RR2"
+    ],
+    "default_action": "RR2",
+    "policy_json": "policies/template_router_policy_v2.json",
+    "prompt_policy": {
+      "Are the two vertical bands of the same color?": "V9",
+      "Are the red and black solid diagonal lines aligned?": "B",
+      "Do the squares on the left and right have straight edges?": "A",
+      "Are the two vertical lines straight?": "B",
+      "Are the two rectangle the same color?": "V9",
+      "Are the two orange circles the same size?": "L",
+      "Are the those red lines straight?": "B",
+      "Are the distances between the vertical markers labeled A–B and B–C equal?": "V9",
+      "Are the two black lines of equal length?": "MAJ3:B+C+TREE",
+      "Are the two small squares of the same color?": "A",
+      "Are the two horizontal black lines of equal length?": "L",
+      "Are those vertical columns parallel?": "W",
+      "Are the two circles the same size?": "C",
+      "Are the two circles of the same color?": "C",
+      "Is there an boundary in between every adjecent regions?": "V9",
+      "Are the two solid circles the same size?": "MAJ3:B+L+W",
+      "Are the left white pentagon and the right black pentagon equal in size?": "MAJ3:B+L+V9",
+      "Are the left white square and the right black square equal in size?": "W"
+    },
+    "question_usage": {
+      "Are the two vertical bands of the same color?": {
+        "count": 30,
+        "action": "V9"
+      },
+      "Are the red and black solid diagonal lines aligned?": {
+        "count": 30,
+        "action": "B"
+      },
+      "Do the squares on the left and right have straight edges?": {
+        "count": 30,
+        "action": "A"
+      },
+      "Are the two vertical lines straight?": {
+        "count": 30,
+        "action": "B"
+      },
+      "Are the two rectangle the same color?": {
+        "count": 30,
+        "action": "V9"
+      },
+      "Are the two black lines of equal length?": {
+        "count": 30,
+        "action": "MAJ3:B+C+TREE"
+      },
+      "Is there an boundary in between every adjecent regions?": {
+        "count": 30,
+        "action": "V9"
+      },
+      "Are the two orange circles the same size?": {
+        "count": 30,
+        "action": "L"
+      },
+      "Are the those red lines straight?": {
+        "count": 60,
+        "action": "B"
+      },
+      "Are the two solid circles the same size?": {
+        "count": 30,
+        "action": "MAJ3:B+L+W"
+      },
+      "Are the distances between the vertical markers labeled A–B and B–C equal?": {
+        "count": 30,
+        "action": "V9"
+      },
+      "Are those vertical columns parallel?": {
+        "count": 60,
+        "action": "W"
+      },
+      "Are the two small squares of the same color?": {
+        "count": 30,
+        "action": "A"
+      },
+      "Are the two horizontal black lines of equal length?": {
+        "count": 60,
+        "action": "L"
+      },
+      "Are the two circles the same size?": {
+        "count": 30,
+        "action": "C"
+      },
+      "Are the two circles of the same color?": {
+        "count": 30,
+        "action": "C"
+      },
+      "Are the left white pentagon and the right black pentagon equal in size?": {
+        "count": 30,
+        "action": "MAJ3:B+L+V9"
+      },
+      "Are the left white square and the right black square equal in size?": {
+        "count": 30,
+        "action": "W"
+      }
+    },
+    "action_usage": {
+      "V9": 120,
+      "B": 120,
+      "A": 60,
+      "MAJ3:B+C+TREE": 30,
+      "L": 90,
+      "MAJ3:B+L+W": 30,
+      "W": 90,
+      "C": 60,
+      "MAJ3:B+L+V9": 30
+    },
+    "policy_metadata": {
+      "kind": "template_router_policy_v2",
+      "description": null
+    },
+    "pipeline": "template router over cached upstream route outputs",
+    "no_minus_one": true
+  }
+}

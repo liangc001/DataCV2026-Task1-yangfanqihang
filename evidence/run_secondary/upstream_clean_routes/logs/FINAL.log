@@ -1,0 +1,4 @@
+Results saved to evidence/run_secondary/upstream_clean_routes/output/prediction.txt
+Model info saved to evidence/run_secondary/upstream_clean_routes/output/model.json
+Total: 630 | Answer 0: 343 | Answer 1: 287 | Failed: 0
+Action usage: {'L': 120, 'C': 90, 'A': 210, 'W': 180, 'B': 30}

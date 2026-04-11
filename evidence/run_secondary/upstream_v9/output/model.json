@@ -1,0 +1,28 @@
+{
+  "model": "gpt-5.2",
+  "parameters": {
+    "base_url": "<api_base_url>",
+    "yes_model": "qwen3-vl-plus",
+    "no_model": "qwen3-vl-plus",
+    "judge_model": "gpt-5.2",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": 42,
+    "use_assist_view": true,
+    "use_flip_view": true,
+    "assist_max_w": 768,
+    "assist_contrast": 1.35,
+    "assist_sharpness": 1.25,
+    "boundary_contrast": 7.5,
+    "boundary_sharpness": 1.9,
+    "length_strip_h": 220,
+    "length_use_icl": true,
+    "length_icl_preset": "4",
+    "boundary_strip_half_w": 0.06,
+    "straight_cand_top": "0.32,0.36,0.40,0.44",
+    "straight_cand_bottom": "0.56,0.60,0.64,0.68",
+    "straight_cand_half_h": 0.022,
+    "straight_cand_panel_h": 150,
+    "pipeline": "single-call verifier: length uses montage + synthetic ICL (if enabled), straight uses multi-candidate bands+guideline, boundary raw-only -> verifier checklist (JSON or <answer>) -> derived 0/1; no measurement"
+  }
+}
